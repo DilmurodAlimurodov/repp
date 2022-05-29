@@ -8,9 +8,9 @@ export const getUploadedFile =
 async (req: Request, res: Response) => {
   try {
     const { filename } = req.params;
-    const filePath = path.join(__dirname, '../uploads', filename)
-    const isExist = fs.existsSync(filePath)
-    if (!isExist) return notFound(`File '${filename}' not found`, res)
+    // const filePath = path.join(__dirname, '../uploads', filename)
+    // const isExist = fs.existsSync(filePath)
+    // if (!isExist) return notFound(`File '${filename}' not found`, res)
     // if (req.query.stream !== undefined) {
     //   res.setHeader('Content-Type', 'application/octet-stream');
     //   return getFileStream(filePath).pipe(res)
