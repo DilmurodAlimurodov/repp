@@ -1,0 +1,24 @@
+POST http://localhost:9000/admin/book-category
+Content-Type: application/json
+
+{
+  "title": "blabla"
+}
+
+###
+
+PUT http://localhost:9000/admin/book-category/my-first-category-updated
+Content-Type: application/json
+
+{
+  "title": "my first category updated"
+}
+
+
+###
+
+DELETE http://localhost:9000/admin/book-category/blabla
+
+###
+
+GET http://localhost:9000/book-category/all
